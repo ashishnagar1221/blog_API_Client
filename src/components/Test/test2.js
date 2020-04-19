@@ -7,7 +7,8 @@ import React from 'react'
 
 const Test2 = () => {
   return(
-    <div>Test2</div>
+    <div>to check the valid user = pass user_name and password as a query parameter and check if the user exists
+   </div>
    )
 
  }

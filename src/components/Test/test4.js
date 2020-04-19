@@ -7,7 +7,8 @@ import React from 'react'
 
 const Test4 = (props) => {
   return(
-    <div>Test4</div>
+    <div> modify and delete the blogpost= only if the blog is owned by the user
+    </div>
    )
 
  }

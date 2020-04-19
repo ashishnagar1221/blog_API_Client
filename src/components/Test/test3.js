@@ -7,7 +7,8 @@ import React from 'react'
 
 const Test3 = () => {
   return(
-    <div>Test3</div>
+    <div> add a blog post = add new blog corresponding to the username in the DB
+   </div>
    )
 
  }

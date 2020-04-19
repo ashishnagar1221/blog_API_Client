@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar/>
-      <Route path exact="/">
+      <Route exact={true} path="/">
         <Test1/>
       </Route>
       <Route path ="/2">
