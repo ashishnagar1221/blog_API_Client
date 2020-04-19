@@ -7,15 +7,6 @@ class Test1 extends React.Component {
         //console.log(this.state)
     }
 
-    // fetch('https://www.omdbapi.com/?s=batman&plot=full&apikey=thewdb').then(response => {
-    //     response.json().then(data => {
-    //       //console.log(data);
-    //       this.setState({
-    //         data: data.Search
-    //       })
-    //     })
-    //   })
-
     componentDidMount(){
         fetch('/posts',{
                 headers : { 
