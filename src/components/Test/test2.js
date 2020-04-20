@@ -1,10 +1,6 @@
 import React,{useState} from 'react';
-import {Link,useHistory} from 'react-router-dom'
-
-/**
-* @author
-* @function Test2
-**/
+import {useHistory} from 'react-router-dom'
+import M from 'materialize-css'
 
 const Test2 = () => {
 
@@ -13,9 +9,27 @@ const Test2 = () => {
   const [password,setPassword] = useState("");
 
   const PostData = () =>{
+    let url = "";
+    url = url+"?name="+user+"&password="+password
+    console.log(url)
 
-    console.log(user+ " "+ password)
-    
+    fetch(`/post/valid${url}`)
+    .then(res => res.text())
+    .then(data => M.toast({html:data}))
+
+    //,{
+//       headers : { 
+//         'Accept': 'application/json'
+//        }
+//     }).then(data => {
+//       if(data.error){
+//         M.toast({html:"data.error"})
+//         history.push('/')
+//       }else{
+//         M.toast({html:"data"})
+//         history.push('/2')
+//   }
+// })
     
   }
 
