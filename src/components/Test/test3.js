@@ -50,7 +50,7 @@ const Test3 = () => {
             />  
         <button className="btn waves-effect wave-light"
         onClick = {()=>PostData()}>
-            Check 
+            POST
         </button>
    </div>
    )

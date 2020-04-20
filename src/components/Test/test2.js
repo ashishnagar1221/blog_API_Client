@@ -1,10 +1,8 @@
 import React,{useState} from 'react';
-import {useHistory} from 'react-router-dom'
 import M from 'materialize-css'
 
 const Test2 = () => {
 
-  const history = useHistory();
   const [user,setUser] = useState("");
   const [password,setPassword] = useState("");
 
@@ -17,20 +15,6 @@ const Test2 = () => {
     .then(res => res.text())
     .then(data => M.toast({html:data}))
 
-    //,{
-//       headers : { 
-//         'Accept': 'application/json'
-//        }
-//     }).then(data => {
-//       if(data.error){
-//         M.toast({html:"data.error"})
-//         history.push('/')
-//       }else{
-//         M.toast({html:"data"})
-//         history.push('/2')
-//   }
-// })
-    
   }
 
 
