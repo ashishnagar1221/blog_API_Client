@@ -4,7 +4,6 @@ class Test1 extends React.Component {
     constructor(){
         super();
         this.state = {posts:[]};
-        //console.log(this.state)
     }
 
     componentDidMount(){
@@ -14,7 +13,6 @@ class Test1 extends React.Component {
                  }
         }).then(response =>{
             response.json().then(post =>{
-                //console.log(post)
                 this.setState({
                     posts:post
                 })
