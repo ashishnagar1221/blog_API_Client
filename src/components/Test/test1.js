@@ -4,17 +4,17 @@ class Test1 extends React.Component {
     constructor(){
         super();
         this.state = {posts:[]};
-        //console.log(this.state)
     }
 
     componentDidMount(){
         fetch('/posts',{
                 headers : { 
-                  'Accept': 'application/json'
+                  "Content-Type":"application/json",
+                  'Accept': 'application/json',
+                  
                  }
         }).then(response =>{
             response.json().then(post =>{
-                //console.log(post)
                 this.setState({
                     posts:post
                 })

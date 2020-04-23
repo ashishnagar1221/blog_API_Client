@@ -13,7 +13,8 @@ const Test3 = () => {
     fetch("/newpost",{
       method:"post",
       headers:{
-        "Content-Type":"application/json"
+        "Content-Type":"application/json",
+        'Accept': 'application/json'
       },
       body:JSON.stringify({
         postedBy:user,
