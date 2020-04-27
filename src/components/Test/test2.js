@@ -11,7 +11,7 @@ const Test2 = () => {
     url = url+"?name="+user+"&password="+password
     console.log(url)
 
-    fetch(`/post/valid${url}`)
+    fetch(`https://blog-api-assign.herokuapp.com/post/valid${url}`)
     .then(res => res.text())
     .then(data => M.toast({html:data}))
 

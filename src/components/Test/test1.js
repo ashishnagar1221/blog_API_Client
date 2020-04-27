@@ -7,10 +7,10 @@ class Test1 extends React.Component {
     }
 
     componentDidMount(){
-        fetch('/posts',{
+        fetch('https://blog-api-assign.herokuapp.com/posts',{
                 headers : { 
                   "Content-Type":"application/json",
-                  'Accept': 'application/json',
+                  'Accept': 'application/json'
                   
                  }
         }).then(response =>{

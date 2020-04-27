@@ -12,7 +12,7 @@ const Test4 = (props) => {
     url = url+"?name="+user+"&title="+title
     console.log(url)
 
-    fetch(`/delete${url}`)
+    fetch(`https://blog-api-assign.herokuapp.com/delete${url}`)
     .then(res => res.text())
     .then(data => M.toast({html:data}))
 

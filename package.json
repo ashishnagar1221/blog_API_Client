@@ -2,7 +2,6 @@
   "name": "blog_assign_client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://blog-api-assign.herokuapp.com",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

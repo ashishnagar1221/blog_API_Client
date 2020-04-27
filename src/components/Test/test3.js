@@ -10,7 +10,7 @@ const Test3 = () => {
   const [postText,setPostText] = useState("");
 
   const PostData = () =>{
-    fetch("/newpost",{
+    fetch("https://blog-api-assign.herokuapp.com/newpost",{
       method:"post",
       headers:{
         "Content-Type":"application/json",
